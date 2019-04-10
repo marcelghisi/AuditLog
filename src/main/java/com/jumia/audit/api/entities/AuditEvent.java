@@ -8,16 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.PrePersist;
 import javax.persistence.Table;
-import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
-
-import com.jumia.audit.api.cryptograph.AESCryptoServiceImpl;
-import com.jumia.audit.api.cryptograph.CryptographService;
 
 @Entity
 @Table(name="audit_event")
