@@ -15,8 +15,34 @@ To change the number of items in page change application.properties -> paginacao
 All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as follow
 http://localhost:8080/api/audits/10/?admin=admin&password=123456 (The admin and password filter code has been written just for demo
 
-To include events in log configure postman with the header and body json below
+To use MYSQL change application.properties to:
+###############################################################
+spring.jpa.hibernate.ddl-auto=none
+spring.datasource.url=jdbc:mysql://localhost:3306/audit_logs
+spring.datasource.username=root
+spring.datasource.password=m6a6r2c9
 
+# exibe os comandos SQL
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.use_sql_comments=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.type=trace
+spring.jpa.properties.hibernate.id.new_generator_mappings=false
+spring.jackson.serialization.fail-on-empty-beans=false
+##################################################################
+
+
+To USE H2 change application.properties to:
+########################################################
+spring.jpa.hibernate.ddl-auto=create
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+spring.datasource.username=sa
+spring.datasource.password=sa
+
+########################################################
+
+To include events in log configure postman with the header and body json below
 POST http://localhost:8080/api/audits
 Content-Type
 BODY
