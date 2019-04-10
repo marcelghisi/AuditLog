@@ -3,24 +3,27 @@
 # API AUDITLOG
 Projeto OF INTERV
 
-Please to test just create a 
-mysql connection with name audit_logs and change the password and user in application.properties
 
-spring.datasource.url=jdbc:mysql://localhost:3306/audit_logs
-spring.datasource.username=some
-spring.datasource.password=some
+For a better avaliation 
 
+#To change the number of pages
 To change the number of items in page change application.properties -> paginacao.qtd_por_pagina=
 
+#To request decrypt pci and pii data encrypted
 All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as follow
 http://localhost:8080/api/audits/10/?admin=admin&password=123456 (The admin and password filter code has been written just for demo
 
->To use MYSQL change application.properties to:
+#To test with mysql
+
+*Create a mysql database
+*Create a user and password for database
+*Change application.properties file with below data
+
 ```
 spring.jpa.hibernate.ddl-auto=none
 spring.datasource.url=jdbc:mysql://localhost:3306/audit_logs
-spring.datasource.username=root
-spring.datasource.password=m6a6r2c9
+spring.datasource.username=some
+spring.datasource.password=some
 
 spring.jpa.properties.hibernate.show_sql=true
 spring.jpa.properties.hibernate.use_sql_comments=true
@@ -30,8 +33,8 @@ spring.jpa.properties.hibernate.id.new_generator_mappings=false
 spring.jackson.serialization.fail-on-empty-beans=false
 ```
 
-
->To USE H2 change application.properties to:
+#To test with H2
+*the project comes with H2 configured but if you swiched to mysql use the below code instead above
 ```
 spring.jpa.hibernate.ddl-auto=create
 spring.datasource.driver-class-name=org.h2.Driver
