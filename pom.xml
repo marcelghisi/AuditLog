@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ghisi</groupId>
-	<artifactId>ponto-inteligente</artifactId>
+	<artifactId>audit-logs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>PontoInteligente</name>
+	<name>AuditLogs</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

@@ -1,7 +1,5 @@
 package com.jumia.audit.api.cryptograph;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
-
 import java.lang.reflect.Field;
 import java.security.InvalidKeyException;
 import java.security.Key;
@@ -15,7 +13,6 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 @Component
