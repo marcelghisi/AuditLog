@@ -14,12 +14,12 @@ All the data inserted in nullable fields pci and pii will be applied cryptograph
 http://localhost:8080/api/audits/10/?admin=admin&password=123456 (The admin and password filter code has been written just for demo
 
 #To test with mysql
-
+```
 *Create a mysql database
 *Create a user and password for database
 *Change application.properties file with below data
 
-```
+
 spring.jpa.hibernate.ddl-auto=none
 spring.datasource.url=jdbc:mysql://localhost:3306/audit_logs
 spring.datasource.username=some
@@ -34,8 +34,9 @@ spring.jackson.serialization.fail-on-empty-beans=false
 ```
 
 #To test with H2
-*the project comes with H2 configured but if you swiched to mysql use the below code instead above
 ```
+*the project comes with H2 configured but if you swiched to mysql use the below code instead above
+
 spring.jpa.hibernate.ddl-auto=create
 spring.datasource.driver-class-name=org.h2.Driver
 spring.datasource.url=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
