@@ -11,10 +11,10 @@ For a better avaliation
 
 #To request decryption for the pci dss(Payment Card Industry Data Security Standard) and pii(Personally identifiable information) colunms data encrypted use the URL below
 ```
-http://localhost:8080/api/audits/10/?admin=admin&password=123456 (The admin and password filter code has been written just for demo
+http://localhost:8080/api/audits/10/?admin=admin&password=123456 
 ```
->>All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as follow
-
+>All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as follow
+>>The admin and password filter code has been written just for demo
 
 #To test with mysql
 ```
