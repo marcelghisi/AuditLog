@@ -13,8 +13,8 @@ For a better avaliation
 ```
 http://localhost:8080/api/audits/10/?admin=admin&password=123456 
 ```
->All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as follow
->>The admin and password filter code has been written just for demo
+>All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as demonstreted in the url above
+>>Pss . The admin and password filter code has bean written just for demo purposes
 
 #To test with mysql
 ```
