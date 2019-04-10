@@ -9,7 +9,7 @@ For a better avaliation
 #To change the number of pages
 To change the number of items in page change application.properties -> paginacao.qtd_por_pagina=
 
-#To request decrypt the pci and pii colunms data encrypted
+#To request decrypt the pci and pii(Personally identifiable information) colunms data encrypted
 All the data inserted in nullable fields pci and pii will be applied cryptograph and to decrypt use filters as follow
 http://localhost:8080/api/audits/10/?admin=admin&password=123456 (The admin and password filter code has been written just for demo
 
