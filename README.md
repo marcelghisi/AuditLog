@@ -38,7 +38,7 @@ spring.jackson.serialization.fail-on-empty-beans=false
 
 #To test with H2
 ```
-*the project comes with H2 configured but if you swiched to mysql use the below code instead above
+*the project comes with H2 configured but if you swiched to mysql use the code above instead below
 
 spring.jpa.hibernate.ddl-auto=create
 spring.datasource.driver-class-name=org.h2.Driver
